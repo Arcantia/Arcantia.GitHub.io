@@ -4,7 +4,7 @@ export const siteConfig = {
     author: "Kristoff Liao",
     username: "PhobosID",
     website: "https://arcantia.qzz.io",
-    description: "Arcantia Network is a Crossplay Minecraft Java Server that specialized in SlimeFun. That means, Java and Bedrock player can play together. Our Survival mechanism relies heavily on Economy and SlimeFun.",
+    description: "Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it \"Premium\" or \"Cracked\", can play together, without any discrimination. We believe not all players able to afford Minecraft. That is why and we strive to create a welcoming and inclusive environment for everyone.",
     connect: {
       ip: "play.arcantia.qzz.io",
       port: "25565",
@@ -15,10 +15,10 @@ export const siteConfig = {
   },
   apis: {
     playerCount: "https://mcapi.us/server/status",
-    discordId: ""
+    discordId: "1008309322360553563"
   },
   social: {
-    discord: "https://dsc.gg",
+    discord: "https://dsc.gg/arcantia",
     donate: "https://arcantia.qzz.io/store"
   }
 };
