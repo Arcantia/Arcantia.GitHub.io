@@ -17,7 +17,7 @@ export default function Home() {
               <div className="text">
                 <h1 className="text-[22px]">Welcome to our Website</h1>
                 <p className="mt-5 mb-3 leading-7">
-                  Arcantia Network is a Crossplay Minecraft Java Server that specialized in SlimeFun. That means, Java and Bedrock player can play together. Our Survival mechanism relies heavily on Economy and SlimeFun.
+                  Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. That means, Java and Bedrock player can play together. Our Survival mechanism relies heavily on Economy and SlimeFun.
                 </p>
                 <p>Join us at <strong>play.arcantia.qzz.io</strong></p>
               </div>
