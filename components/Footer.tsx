@@ -16,13 +16,13 @@ export function Footer() {
           <br />
           <section className="section section-store">
             <h2>Vote our Server</h2>
-            <p className="mb-4">Voting our server helps with the exposure of our server to even more players. Thank you for voting!</p>
+            <p className="mb-4">Vote helps with the exposure of our server to even more players. Thank you for voting!</p>
             <Link className="btn is-purple" href="/vote" target="_blank">Vote Link</Link>
           </section>
           <br />
           <section className="section section-store">
             <h2>Visit our Store</h2>
-            <p className="mb-4">We offer badges in return of awesome perks! We also offers in-game-currency!</p>
+            <p className="mb-4">We offer shards as premium currency in return, you can use these for buying our rank!</p>
             <Link className="btn is-purple" href="/store" target="_blank">Store Link</Link>
           </section>
         </div>

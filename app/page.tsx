@@ -17,7 +17,7 @@ export default function Home() {
               <div className="text">
                 <h1 className="text-[22px]">Welcome to our Website</h1>
                 <p className="mt-5 mb-3 leading-7">
-                  Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it "Premium" or "Cracked", can play together, without any discrimination. We believe not all players able to afford Minecraft. That is why and we strive to create a welcoming and inclusive environment for everyone.
+                  Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it "Premium" or "Cracked", can play together, without any discrimination, because we believe, not all players able to afford Minecraft.
                 </p>
                 <p>Join us at <strong>play.arcantia.qzz.io</strong></p>
               </div>

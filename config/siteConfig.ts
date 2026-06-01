@@ -4,7 +4,7 @@ export const siteConfig = {
     author: "Kristoff Liao",
     username: "PhobosID",
     website: "https://arcantia.qzz.io",
-    description: "Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it \"Premium\" or \"Cracked\", can play together, without any discrimination. We believe not all players able to afford Minecraft. That is why and we strive to create a welcoming and inclusive environment for everyone.",
+    description: "Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it \"Premium\" or \"Cracked\", can play together, without any discrimination, because we believe, not all players able to afford Minecraft.",
     connect: {
       ip: "play.arcantia.qzz.io",
       port: "25565",
