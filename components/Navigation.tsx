@@ -141,7 +141,7 @@ function CopyIPButton() {
 
   return (
     <>
-      <button type="button" onClick={handleCopy} className="header-server-ip arcantia-js--copyip">
+      <button type="button" onClick={handleCopy} className="header-server-ip">
         <div className="text text-right">
           <span className="big">{siteConfig.server.connect.maskIp}</span>
           <span className="small">
