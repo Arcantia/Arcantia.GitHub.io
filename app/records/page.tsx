@@ -11,8 +11,6 @@ import NotFound from '../not-found';
 interface PurchaseRecord {
   'Purchase Time': string;
   'Username': string;
-  'Category': string;
-  'Item': string;
   'Amount': number;
   'Cost': number;
   [key: string]: string | number;
@@ -51,7 +49,7 @@ export default function PrivacyPolicyPage() {
     try {
       setLoading(true);
       const { data: tableData, error: fetchError } = await supabase
-        .from('Purchase_Records')
+        .from('Shards_Records')
         .select('*')
         .order('Purchase Time', { ascending: true });
 
@@ -89,7 +87,7 @@ export default function PrivacyPolicyPage() {
       const updateData = { [columnName]: editValue };
 
       const { error: updateError } = await supabase
-        .from('Purchase_Records')
+        .from('Shards_Records')
         .update(updateData)
         .match(row);
 
@@ -113,8 +111,6 @@ export default function PrivacyPolicyPage() {
       const newRow = {
         'Purchase Time': new Date().toISOString(),
         'Username': '',
-        'Category': '',
-        'Item': '',
         'Amount': 0,
         'Cost': 0,
       };
@@ -123,7 +119,7 @@ export default function PrivacyPolicyPage() {
         error: insertError,
         data: insertedData
       } = await supabase
-        .from('Purchase_Records')
+        .from('Shards_Records')
         .insert([newRow])
         .select();
 
