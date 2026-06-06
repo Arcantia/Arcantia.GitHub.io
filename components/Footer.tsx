@@ -22,7 +22,7 @@ export function Footer() {
           <br />
           <section className="section section-store">
             <h2>Visit our Store</h2>
-            <p className="mb-4">We offer shards as premium currency in return, you can use these for buying our rank!</p>
+            <p className="mb-4">We offer shards as a currency, in exchange, you can use these for buying our ranks!</p>
             <Link className="btn is-purple" href="/store" target="_blank">Store Link</Link>
           </section>
         </div>
