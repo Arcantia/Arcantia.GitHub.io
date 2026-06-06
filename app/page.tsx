@@ -24,7 +24,7 @@ export default function Home() {
               <div className="links flex items-center">
                 <Link href="/vote" className="link link-about">
                   <img src="/images/vote-mascot.webp" alt="" />
-                  <strong>Vote our Server</strong>
+                  <strong>Vote Us</strong>
                   <small>Spread the word!</small>
                 </Link>
                 <Link href="/store" className="link link-store">

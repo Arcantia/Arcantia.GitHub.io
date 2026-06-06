@@ -3963,15 +3963,15 @@ input {
 }
 
 input::-moz-placeholder {
-  color: #57afdb
+  color: #fefefe
 }
 
 input:-ms-input-placeholder {
-  color: #57afdb
+  color: #fefefe
 }
 
 input::placeholder {
-  color: #57afdb
+  color: #fefefe
 }
 
 .container {

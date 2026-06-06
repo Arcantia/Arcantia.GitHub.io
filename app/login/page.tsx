@@ -1,17 +1,21 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { HeaderCanvas } from '@/components/HeaderCanvas';
 import { supabase } from '@/lib/supabase';
+import TimeoutPage from '../timeout';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showTimeout, setShowTimeout] = useState(false);
+  const [pendingTimeout, setPendingTimeout] = useState(false);
+  const [countdown, setCountdown] = useState(5);
   const router = useRouter();
 
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
@@ -26,11 +30,38 @@ export default function LoginPage() {
       if (error) throw error;
       router.push('/records');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred');
+      const message = err instanceof Error ? err.message : 'An error occurred';
+      if (message.toLowerCase().includes('invalid') || message.toLowerCase().includes('wrong')) {
+        setPendingTimeout(true);
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (!pendingTimeout) return;
+
+    setCountdown(5);
+    const intervalId = window.setInterval(() => {
+      setCountdown((prev) => Math.max(prev - 1, 0));
+    }, 1000);
+
+    const timeoutId = window.setTimeout(() => {
+      setShowTimeout(true);
+    }, 5000);
+
+    return () => {
+      window.clearInterval(intervalId);
+      window.clearTimeout(timeoutId);
+    };
+  }, [pendingTimeout]);
+
+  if (showTimeout) {
+    return <TimeoutPage />;
+  }
 
   return (
     <>
@@ -45,7 +76,10 @@ export default function LoginPage() {
                   <div className="post-content login-form">
                     <h1>Login</h1>
                     <p className="login-subtitle">Sign in to access more features.</p>
-                    {error && <div className="login-error">{error}</div>}
+                    {pendingTimeout && (
+                      <div className="login-error"></div>
+                    )}
+                    {error && !pendingTimeout && <div className="login-error">{error}</div>}
                     <form onSubmit={handleLogin} className="login-input-form">
                       <label>
                         <span>Email</span>
@@ -67,9 +101,11 @@ export default function LoginPage() {
                           required
                         />
                       </label>
-                      <button type="submit" className="btn is-purple" disabled={loading}>
-                        {loading ? 'Logging in...' : 'Login'}
-                      </button>
+                      <center>
+                        <button type="submit" className="btn is-purple" disabled={loading || pendingTimeout}>
+                          {loading ? 'Logging in...' : 'Login Now!'}
+                        </button>
+                      </center>
                     </form>
                   </div>
                 </section>
