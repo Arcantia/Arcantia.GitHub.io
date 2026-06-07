@@ -16,7 +16,7 @@ interface PurchaseRecord {
   [key: string]: string | number;
 }
 
-export default function PrivacyPolicyPage() {
+export default function RecordsPage() {
   const [data, setData] = useState<PurchaseRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

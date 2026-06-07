@@ -28,6 +28,7 @@ export const metadata: Metadata = {
 };
 
 import DisableInteractions from '@/components/DisableInteractions';
+import Script from 'next/script';
 
 export default function RootLayout({
   children,
@@ -48,13 +49,13 @@ export default function RootLayout({
         <div id="arcantia-app" className="flex flex-col min-h-full">
           {children}
         </div>
-        <script src="/js/clipboard.js"></script>
-        <script src="/js/axios.js"></script>
-        <script src="/js/script.js"></script>
-        <script src="/js/cards.js"></script>
-        <script src="/js/fontawesome.js"></script>
-        <script src="/js/alpine.js"></script>
-        <script src="/js/jquery.js"></script>
+        <Script src="/js/clipboard.js" strategy="afterInteractive" />
+        <Script src="/js/axios.js" strategy="afterInteractive" />
+        <Script src="/js/script.js" strategy="afterInteractive" />
+        <Script src="/js/cards.js" strategy="afterInteractive" />
+        <Script src="/js/fontawesome.js" strategy="afterInteractive" />
+        <Script src="/js/alpine.js" strategy="afterInteractive" />
+        <Script src="/js/jquery.js" strategy="afterInteractive" />
       </body>
     </html>
   );
