@@ -28,7 +28,7 @@ export default function LoginPage() {
       });
 
       if (error) throw error;
-      router.push('/records');
+      router.push('/');
     } catch (err) {
       const message = err instanceof Error ? err.message : 'An error occurred';
       if (message.toLowerCase().includes('invalid') || message.toLowerCase().includes('wrong')) {
