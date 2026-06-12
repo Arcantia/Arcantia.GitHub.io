@@ -19,7 +19,7 @@ export default function Home() {
                 <p className="mt-5 mb-3 leading-7">
                   Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it "Premium" or "Cracked", can play together, without any discrimination, because we believe, not all players able to afford Minecraft.
                 </p>
-                <p>Join us at <strong>play.arcantia.qzz.io</strong></p>
+                <p>Join us at <strong>play.arcantianet.work</strong></p>
               </div>
               <div className="links flex items-center">
                 <Link href="/vote" className="link link-about">
@@ -54,7 +54,7 @@ export default function Home() {
                       <img src="/images/step-3.webp" alt="Step-3" />
                     </figure>
                     <center><h2 className="link-title text-[28px]">Enter the server identity:</h2></center>
-                    <center><h2 className="link-title text-[28px]">Server Name: Arcantia Network<br />Server Address: play.arcantia.qzz.io</h2></center>
+                    <center><h2 className="link-title text-[28px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work</h2></center>
                     <center><h2 className="link-title text-[28px]">Enable the Server Resource Packs</h2></center>
                     <div className="link-tags"></div>
                     <figure className="image">

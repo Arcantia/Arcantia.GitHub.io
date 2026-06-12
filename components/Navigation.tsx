@@ -62,9 +62,9 @@ export function Navigation() {
             <a href={siteConfig.social.discord} target="_blank" rel="noreferrer" className="header-discord">
               <i className="mdi mdi-discord mr-7 xl:mr-4 relative top-1"></i>
               <div className="text text-left">
-                <span className="big">Our Discord</span>
+                <span className="big">Join Our Discord</span>
                 <div className="small">
-                  <span className="discordcount"></span> Join the Arcantia Community!
+                  <span className="discordcount"></span> Engage with Community!
                 </div>
               </div>
             </a>
