@@ -6,10 +6,10 @@ import { HeaderCanvas } from '@/components/HeaderCanvas';
 
 const VOTE_LINKS = [
   'https://www.minerank.com/arcantia/vote/?utm_source=arcantia.qzz.io',
-  'https://minecraft-mp.com/server/358807/vote/?utm_source=arcantia.qzz.io',
-  'https://topminecraftservers.org/vote/43635/?utm_source=arcantia.qzz.io',
+  'https://minecraft-mp.com/server/358807/vote/?utm_source=arcantia.qzz.io',  
   'https://minecraft.buzz/vote/21389/?utm_source=arcantia.qzz.io',
-  'https://minecraft.menu/server-arcantia-network.6384/vote/?utm_source=arcantia.qzz.io',
+  'https://minecraftservers.org/vote/688619/?utm_source=arcantia.qzz.io',
+  'https://play-minecraft-servers.com/minecraft-servers/arcantia-network/?tab=vote&utm_source=arcantia.qzz.io',
 ];
 
 export default function VotePage() {

@@ -64,7 +64,7 @@ export function Navigation() {
               <div className="text text-left">
                 <span className="big">Our Discord</span>
                 <div className="small">
-                  <span className="discordcount">0</span> Members Online
+                  <span className="discordcount"></span> Join the Arcantia Community!
                 </div>
               </div>
             </a>
