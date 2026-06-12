@@ -43,24 +43,23 @@ export default function Home() {
                     <figure className="image">
                       <img src="/images/step-1.webp" alt="Step-1" />
                     </figure>
-                    <center><h2 className="link-title text-[28px]">Open your Minecraft Launcher, Navigate to "Multiplayer"</h2></center>
+                    <center><h2 className="link-title text-[20px]">Open your Minecraft Launcher, Navigate to "Multiplayer"</h2></center>
                     <div className="link-tags"></div>
                     <figure className="image">
                       <img src="/images/step-2.webp" alt="Step-2" />
                     </figure>
-                    <center><h2 className="link-title text-[28px]">Click the "Add a New Server" button</h2></center>
+                    <center><h2 className="link-title text-[20px]">Click the "Add a New Server" button</h2></center>
                     <div className="link-tags"></div>
                     <figure className="image">
                       <img src="/images/step-3.webp" alt="Step-3" />
                     </figure>
-                    <center><h2 className="link-title text-[28px]">Enter the server identity:</h2></center>
-                    <center><h2 className="link-title text-[28px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work</h2></center>
-                    <center><h2 className="link-title text-[28px]">Enable the Server Resource Packs</h2></center>
+                    <center><h2 className="link-title text-[20px]">Enter the server identity:</h2></center>
+                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work</h2></center>
                     <div className="link-tags"></div>
                     <figure className="image">
                       <img src="/images/step-4.webp" alt="Step-4" />
                     </figure>
-                    <center><h2 className="link-title text-[28px]">Done and you're all set!</h2></center>
+                    <center><h2 className="link-title text-[20px]">Done and you're all set! If the MOTD isn't showing (or saying "Can't connect to server"), No problem! It's a bug. You can still join regardless.</h2></center>
                     <div className="link-tags"></div>
                   </div>
                 </section>
