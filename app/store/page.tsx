@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { HeaderCanvas } from '@/components/HeaderCanvas';
-import { BadgesList } from '@/components/BadgesList';
+import { RanksList } from '@/components/RanksList';
 
 export default function StorePage() {
   return (
@@ -16,11 +16,12 @@ export default function StorePage() {
           <main className="arcantia-homepage">
             <h2 className="section-title"><span>Server Store</span></h2>
             <h4 className="App">-- Coming Soon --</h4>
-            <div className="badge-separator"></div>
-                <BadgesList />
-            <div className="badge-separator"></div>
+            <h4 className="App">-- 100 Shards = IDR 10,000 --</h4>
+            <div className="rank-separator"></div>
+                <RanksList />
+            <div className="rank-separator"></div>
             <div className="purchase-section flex items-center justify-center flex-col py-20">
-              <h3 style={{ color: '#fff', textAlign: 'center', padding: '1rem' }}>Join our Discord to purchase our badges</h3>
+              <h3 style={{ color: '#fff', textAlign: 'center', padding: '1rem' }}>Join our Discord to purchase our ranks</h3>
               <Link href="https://dsc.gg/arcantia" className="btn is-purple" target="_blank" rel="noreferrer">
                 Our Discord
               </Link>

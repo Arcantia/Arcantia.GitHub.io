@@ -79,7 +79,7 @@ export default function StaffPage() {
               {STAFF_GROUPS.map((group, groupIdx) => (
                 <div key={groupIdx} className="group mb-8 last:mb-0">
                   <h2>
-                    <i className="mdi mdi-badge-account-outline"></i>
+                    <i className="mdi mdi-rank-account-outline"></i>
                     <span>{group.group}</span>
                   </h2>
                   <div className="list">

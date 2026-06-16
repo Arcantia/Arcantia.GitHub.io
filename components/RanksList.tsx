@@ -1,6 +1,6 @@
 ﻿'use client';
 
-interface BadgeSpec {
+interface RanksSpec {
   id: string;
   name: string;
   image: string;
@@ -9,15 +9,15 @@ interface BadgeSpec {
   features: string[];
 }
 
-const badges: BadgeSpec[] = [
+const ranks: RanksSpec[] = [
   {
     id: 'phoenix',
     name: 'PHOENIX',
-    image: '/images/badge-phoenix.webp',
-    price: 'Rp. 20,000',
-    discountedPrice: '',
+    image: '/images/rank-phoenix.webp',
+    price: '250 Shards',
+    discountedPrice: '200 Shards',
     features: [
-      'All Features on Citizen Badge',
+      'All Features on Citizen Rank',
       'Instantly Get 500K Money',
       'Able to Claim 5000 Blocks for Lands',
       'Access to Phoenix Kit',
@@ -32,11 +32,11 @@ const badges: BadgeSpec[] = [
   {
     id: 'sage',
     name: 'SAGE',
-    image: '/images/badge-sage.webp',
-    price: 'Rp. 40,000',
-    discountedPrice: '',
+    image: '/images/rank-sage.webp',
+    price: '500 Shards',
+    discountedPrice: '400 Shards',
     features: [
-      'All Features on Phoenix Badge',
+      'All Features on Phoenix Rank',
       'Instantly Get 700K Money',
       'Able to Claim 7000 Blocks for Lands',
       'Access to Sage Kit',
@@ -51,11 +51,11 @@ const badges: BadgeSpec[] = [
   {
     id: 'celestial',
     name: 'CELESTIAL',
-    image: '/images/badge-celestial.webp',
-    price: 'Rp. 75,000',
-    discountedPrice: '',
+    image: '/images/rank-celestial.webp',
+    price: '1,000 Shards',
+    discountedPrice: '750 Shards',
     features: [
-      'All Features on Sage Badge',
+      'All Features on Sage Rank',
       'Instantly Get 900K Money',
       'Able to Claim 10000 Blocks for Lands',
       'Access to Celestial Kit',
@@ -70,11 +70,11 @@ const badges: BadgeSpec[] = [
   {
     id: 'onex',
     name: 'ONEX',
-    image: '/images/badge-onex.webp',
-    price: 'Rp. 120,000',
-    discountedPrice: '',
+    image: '/images/rank-onex.webp',
+    price: '1,500 Shards',
+    discountedPrice: '1,200 Shards',
     features: [
-      'All Features on Celestial Badge',
+      'All Features on Celestial Rank',
       'Instantly Get 1M Money',
       'Able to Claim 13000 Blocks for Lands',
       'Access to Onex Kit',
@@ -93,11 +93,11 @@ const badges: BadgeSpec[] = [
   {
     id: 'arcanum',
     name: 'ARCANUM',
-    image: '/images/badge-arcanum.webp',
-    price: 'Rp. 150,000',
-    discountedPrice: '',
+    image: '/images/rank-arcanum.webp',
+    price: '2,000 Shards',
+    discountedPrice: '1,500 Shards',
     features: [
-      'All Features on Onex Badge',
+      'All Features on Onex Rank',
       'Instantly Get 1.2M Money',
       'Able to Claim 15000 Blocks for Lands',
       'Access to Arcanum Kit',
@@ -114,12 +114,12 @@ const badges: BadgeSpec[] = [
   {
     id: 'custom',
     name: 'CUSTOM',
-    image: '/images/badge-custom.webp',
-    price: 'Rp. 200,000',
-    discountedPrice: 'Rp. 160,000',
+    image: '/images/rank-custom.webp',
+    price: '2,500 Shards',
+    discountedPrice: '2,000 Shards',
     features: [
       'Custom In-Game Prefix and Colors',
-      'All Features on Arcanum Badge',
+      'All Features on Arcanum Rank',
       'Instantly Get 1.5M Money',
       'Able to Claim 17000 Blocks for Lands',
       'Access to All Kits',
@@ -134,34 +134,34 @@ const badges: BadgeSpec[] = [
   },
 ];
 
-export function BadgesList() {
+export function RanksList() {
   return (
-    <div className="system-badges-container">
-      <div className="badges-list">
-        {badges.map((badge, index) => (
-          <div key={badge.id}>
-            <div className="badge-item">
-              <div className="badge-image">
-                <img src={badge.image} alt={`${badge.name} badge`} />
+    <div className="system-ranks-container">
+      <div className="ranks-list">
+        {ranks.map((rank, index) => (
+          <div key={rank.id}>
+            <div className="rank-item">
+              <div className="rank-image">
+                <img src={rank.image} alt={`${rank.name} rank`} />
               </div>
-              <div className="badge-content">
-                <h3 className="badge-name">{badge.name}</h3>
-                <div className="badge-price">
-                  {badge.discountedPrice ? (
+              <div className="rank-content">
+                <h3 className="rank-name">{rank.name}</h3>
+                <div className="rank-price">
+                  {rank.discountedPrice ? (
                     <>
-                      <span className="original-price" style={{ textDecoration: 'line-through' }}>
-                        {badge.price}
+                      <span className="original-price" style={{ color: '#EBE6E3', textDecoration: 'line-through' }}>
+                        {rank.price}
                       </span>
-                      <span className="discount-price" style={{ color: '#4CAF50', fontWeight: 'bold', marginLeft: '10px' }}>
-                        {badge.discountedPrice}
+                      <span className="discount-price" style={{ color: '#35A597', fontWeight: 'bold', marginLeft: '10px' }}>
+                        {rank.discountedPrice}
                       </span>
                     </>
                   ) : (
-                    <span className="badge-price-text">{badge.price}</span>
+                    <span className="rank-price-text">{rank.price}</span>
                   )}
                 </div>
-                <ul className="badge-features">
-                  {badge.features.map((feature, featureIndex) => (
+                <ul className="rank-features">
+                  {rank.features.map((feature, featureIndex) => (
                     <li key={featureIndex}>
                       <i className="mdi mdi-check"></i> {feature}
                     </li>
@@ -169,7 +169,7 @@ export function BadgesList() {
                 </ul>
               </div>
             </div>
-            {index < badges.length - 1 && <div className="badge-separator" />}
+            {index < ranks.length - 1 && <div className="rank-separator" />}
           </div>
         ))}
       </div>
