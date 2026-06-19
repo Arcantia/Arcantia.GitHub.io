@@ -13,11 +13,11 @@ const ranks: RanksSpec[] = [
   {
     id: 'phoenix',
     name: 'PHOENIX',
-    image: '/images/rank-phoenix.webp',
+    image: '/images/rank/tags/rank-phoenix.webp',
     price: '250 Shards',
     discountedPrice: '200 Shards',
     features: [
-      'All Features on Citizen Rank',
+      'All Features on Explorer Rank',
       'Instantly Get 500K Essences',
       'Able to Claim 10000 Blocks for Lands',
       'Access to Phoenix Kit',
@@ -31,7 +31,7 @@ const ranks: RanksSpec[] = [
   {
     id: 'sage',
     name: 'SAGE',
-    image: '/images/rank-sage.webp',
+    image: '/images/rank/tags/rank-sage.webp',
     price: '500 Shards',
     discountedPrice: '400 Shards',
     features: [
@@ -50,7 +50,7 @@ const ranks: RanksSpec[] = [
   {
     id: 'celestial',
     name: 'CELESTIAL',
-    image: '/images/rank-celestial.webp',
+    image: '/images/rank/tags/rank-celestial.webp',
     price: '1,000 Shards',
     discountedPrice: '700 Shards',
     features: [
@@ -68,7 +68,7 @@ const ranks: RanksSpec[] = [
   {
     id: 'onex',
     name: 'ONEX',
-    image: '/images/rank-onex.webp',
+    image: '/images/rank/tags/rank-onex.webp',
     price: '1,500 Shards',
     discountedPrice: '1,000 Shards',
     features: [
@@ -90,7 +90,7 @@ const ranks: RanksSpec[] = [
   {
     id: 'arcanum',
     name: 'ARCANUM',
-    image: '/images/rank-arcanum.webp',
+    image: '/images/rank/tags/rank-arcanum.webp',
     price: '2,000 Shards',
     discountedPrice: '1,500 Shards',
     features: [
@@ -111,7 +111,7 @@ const ranks: RanksSpec[] = [
   {
     id: 'custom',
     name: 'CUSTOM',
-    image: '/images/rank-custom.webp',
+    image: '/images/rank/tags/rank-custom.webp',
     price: '3,000 Shards',
     discountedPrice: '2,000 Shards',
     features: [
