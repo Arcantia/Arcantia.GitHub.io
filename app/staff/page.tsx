@@ -16,11 +16,11 @@ interface StaffGroup {
 
 const STAFF_GROUPS: StaffGroup[] = [
   {
-    group: 'Operator',
+    group: 'Owner',
     members: [
       {
-        name: 'itsShiroharu',
-        img: '/images/staff/itsshiroharu.webp',
+        name: '████████',
+        img: '/images/staff/redacted.webp',
       },
     ],
   },
@@ -39,6 +39,10 @@ const STAFF_GROUPS: StaffGroup[] = [
       {
         name: 'RAMA_wae',
         img: '/images/staff/rama_wae.webp',
+      },
+      {
+        name: 'itsShiroharu',
+        img: '/images/staff/itsshiroharu.webp',
       },
     ],
   },
