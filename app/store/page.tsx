@@ -15,7 +15,7 @@ export default function StorePage() {
         <div className="container">
           <main className="arcantia-homepage">
             <h2 className="section-title"><span>Server Store</span></h2>
-            <h4 className="App">We only sell Shards, where players can purchase ranks and other in-game items, using that very shard.</h4>
+            <h4 className="App">We only sell Shards, where players can purchase badges and other in-game items, using that very shard.</h4>
             <h4 className="App">Rate for the Shards is 1 Shard per IDR 100. You can purchase Shards through our Discord server.</h4>
             <div className="rank-separator"></div>
                 <RanksList />

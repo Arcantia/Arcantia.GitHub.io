@@ -36,7 +36,7 @@ export default function RulesPage() {
                       <li>Typing in all caps.</li>
                       <li>Gameboosting.</li>
                       <li>Using inappropriate nicknames or usernames.</li>
-                      <li>Deceiving Staff to obtain Donor Rank.</li>
+                      <li>Deceiving Staff to obtain Donor Badge.</li>
                       <li>Showing negative behavior towards other players or the community.</li>
                       <li>Sending Unverified Links.</li>
                       <li>Sexual Content.</li>
@@ -70,7 +70,7 @@ export default function RulesPage() {
               <div className="panel-inner page-content post no-image">
                 <section className="post-full-content">
                   <div className="post-content">
-                    <h4>Violating the following rules will result in a Ban or IP-Ban, temporary or permanent. Players who evade their ban will be given a "special" rank.</h4>
+                    <h4>Violating the following rules will result in a Ban or IP-Ban, temporary or permanent. Players who evade their ban will be given a "special" Badge.</h4>
                     <ul>
                       <li>Any promotion without staff permission.</li>
                       <li>Evading active punishments.</li>

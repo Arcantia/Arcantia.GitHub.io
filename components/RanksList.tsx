@@ -12,12 +12,12 @@ interface RanksSpec {
 const ranks: RanksSpec[] = [
   {
     id: 'phoenix',
-    name: 'PHOENIX',
+    name: 'PHOENIX BADGE',
     image: '/images/rank/tags/rank-phoenix.webp',
     price: '250 Shards',
     discountedPrice: '200 Shards',
     features: [
-      'All Features on Explorer Rank',
+      'All Features on Explorer Badge',
       'Instantly Get 500K Essences',
       'Able to Claim 10000 Blocks for Lands',
       'Access to Phoenix Kit',
@@ -30,12 +30,12 @@ const ranks: RanksSpec[] = [
   },
   {
     id: 'sage',
-    name: 'SAGE',
+    name: 'SAGE BADGE',
     image: '/images/rank/tags/rank-sage.webp',
     price: '500 Shards',
     discountedPrice: '400 Shards',
     features: [
-      'All Features on Phoenix Rank',
+      'All Features on Phoenix Badge',
       'Instantly Get 700K Essences',
       'Able to Claim 15000 Blocks for Lands',
       'Automatically obtains Premium Tiarca Pass (/tiarcapass)',
@@ -49,12 +49,12 @@ const ranks: RanksSpec[] = [
   },
   {
     id: 'celestial',
-    name: 'CELESTIAL',
+    name: 'CELESTIAL BADGE',
     image: '/images/rank/tags/rank-celestial.webp',
     price: '1,000 Shards',
     discountedPrice: '700 Shards',
     features: [
-      'All Features on Sage Rank',
+      'All Features on Sage Badge',
       'Instantly Get 900K Essences',
       'Able to Claim 20000 Blocks for Lands',
       'Access to Celestial Kit',
@@ -67,12 +67,12 @@ const ranks: RanksSpec[] = [
   },
   {
     id: 'onex',
-    name: 'ONEX',
+    name: 'ONEX BADGE',
     image: '/images/rank/tags/rank-onex.webp',
     price: '1,500 Shards',
     discountedPrice: '1,000 Shards',
     features: [
-      'All Features on Celestial Rank',
+      'All Features on Celestial Badge',
       'Instantly Get 1M Essences',
       'Able to Claim 25000 Blocks for Lands',
       'Access to Onex Kit',
@@ -89,12 +89,12 @@ const ranks: RanksSpec[] = [
   },
   {
     id: 'arcanum',
-    name: 'ARCANUM',
+    name: 'ARCANUM BADGE',
     image: '/images/rank/tags/rank-arcanum.webp',
     price: '2,000 Shards',
     discountedPrice: '1,500 Shards',
     features: [
-      'All Features on Onex Rank',
+      'All Features on Onex Badge',
       'Instantly Get 1.2M Essences',
       'Able to Claim 30000 Blocks for Lands',
       'Access to Arcanum Kit',
@@ -110,13 +110,13 @@ const ranks: RanksSpec[] = [
   },
   {
     id: 'custom',
-    name: 'CUSTOM',
+    name: 'CUSTOM BADGE',
     image: '/images/rank/tags/rank-custom.webp',
     price: '3,000 Shards',
     discountedPrice: '2,000 Shards',
     features: [
       'Custom In-Game Prefix and Colors',
-      'All Features on Arcanum Rank',
+      'All Features on Arcanum Badge',
       'Instantly Get 1.5M Essences',
       'Able to Claim 35000 Blocks for Lands',
       'Access to All Kits',
@@ -138,7 +138,7 @@ export function RanksList() {
           <div key={rank.id}>
             <div className="rank-item">
               <div className="rank-image">
-                <img src={rank.image} alt={`${rank.name} rank`} />
+                <img src={rank.image} alt={`${rank.name} badge`} />
               </div>
               <div className="rank-content">
                 <h3 className="rank-name">{rank.name}</h3>
