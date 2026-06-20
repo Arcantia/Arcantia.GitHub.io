@@ -38,7 +38,7 @@ const ranks: RanksSpec[] = [
       'All Features on Phoenix Badge',
       'Instantly Get 700K Essences',
       'Able to Claim 15000 Blocks for Lands',
-      'Automatically obtains Premium Tiarca Pass (/tiarcapass)',
+      'Premium Tiarca Pass (/tiarcapass)',
       'Access to Sage Kit',
       'Ability to use /clearinventory',
       'Ability to use /suicide',
@@ -99,8 +99,8 @@ const ranks: RanksSpec[] = [
       'Able to Claim 30000 Blocks for Lands',
       'Access to Arcanum Kit',
       'Unlock all Slimefun Research',
-      'Ability to use /fly on Overworld and Nether',
-      'Ability to use /vanish',
+      'Ability to /fly on Overworld and Nether',
+      'Ability to /vanish',
       'Ability to use /silentjoin',
       'Ability to use /endersee',
       'Able to Set up to 17 Pwarps (/pwarp set)',
@@ -133,40 +133,34 @@ const ranks: RanksSpec[] = [
 export function RanksList() {
   return (
     <div className="system-ranks-container">
-      <div className="ranks-list">
-        {ranks.map((rank, index) => (
-          <div key={rank.id}>
-            <div className="rank-item">
-              <div className="rank-image">
-                <img src={rank.image} alt={`${rank.name} badge`} />
-              </div>
-              <div className="rank-content">
-                <h3 className="rank-name">{rank.name}</h3>
-                <div className="rank-price">
-                  {rank.discountedPrice ? (
-                    <>
-                      <span className="original-price" style={{ color: '#EBE6E3', textDecoration: 'line-through' }}>
-                        {rank.price}
-                      </span>
-                      <span className="discount-price" style={{ color: '#35A597', fontWeight: 'bold', marginLeft: '10px' }}>
-                        {rank.discountedPrice}
-                      </span>
-                    </>
-                  ) : (
-                    <span className="rank-price-text">{rank.price}</span>
-                  )}
-                </div>
-                <ul className="rank-features">
-                  {rank.features.map((feature, featureIndex) => (
-                    <li key={featureIndex}>
-                      <i className="mdi mdi-check"></i> {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+      <div className="ranks-grid">
+        {ranks.map((rank) => (
+          <article key={rank.id} className="rank-card">
+            <h3 className="rank-name">{rank.name}</h3>
+            <div className="rank-image">
+              <img src={rank.image} alt={`${rank.name} badge`} />
             </div>
-            {index < ranks.length - 1 && <div className="rank-separator" />}
-          </div>
+            <div className="rank-divider" />
+            <ul className="rank-features">
+              {rank.features.map((feature, featureIndex) => (
+                <li key={featureIndex}>
+                  <i className="mdi mdi-checkbox-marked-circle-outline feature-icon"></i>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <div className="rank-divider" />
+            <div className="rank-price">
+              {rank.discountedPrice ? (
+                <>
+                  <span className="original-price">{rank.price}</span>
+                  <span className="discount-price">{rank.discountedPrice}</span>
+                </>
+              ) : (
+                <span className="discount-price">{rank.price}</span>
+              )}
+            </div>
+          </article>
         ))}
       </div>
     </div>
