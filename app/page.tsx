@@ -17,7 +17,7 @@ export default function Home() {
               <div className="text">
                 <h1 className="text-[22px]">Welcome to our Website</h1>
                 <p className="mt-5 mb-3 leading-7">
-                  Arcantia Network is a Minecraft Java Server that specialized in Economy and SlimeFun. Any Java player, be it "Premium" or "Cracked", can play together, without any discrimination, because we believe, not all players able to afford Minecraft.
+                  Arcantia Network is a Minecraft Java Crossplay Server that specialized in Economy and SlimeFun. Any Java player, be it Premium or Cracked, or Bedrock player, can play together, without any discrimination, because we believe, not all players able to afford Minecraft.
                 </p>
                 <p>Join us at <strong>play.arcantianet.work</strong></p>
               </div>
@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </section>
 
-            <h2 className="section-title"><span>How to Join</span></h2>
+            <h2 className="section-title"><span>How to Join (Java)</span></h2>
             <div className="panel arcantia-page">
               <div className="panel-inner page-content post">
                 <section className="posts-full-content">
@@ -59,7 +59,38 @@ export default function Home() {
                     <figure className="image">
                       <img src="/images/step-4.webp" alt="Step-4" />
                     </figure>
-                    <center><h2 className="link-title text-[20px]">Done and you're all set! If the MOTD isn't showing (or saying "Can't connect to server"), No problem! It's a bug. You can still join regardless.</h2></center>
+                    <center><h2 className="link-title text-[20px]">Done and you're all set!</h2></center>
+                    <div className="link-tags"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <h2 className="section-title"><span>How to Join (Bedrock)</span></h2>
+            <div className="panel arcantia-page">
+              <div className="panel-inner page-content post">
+                <section className="posts-full-content">
+                  <div className="post-content">
+                    <figure className="image">
+                      <img src="/images/step-1-be.webp" alt="Step-1" />
+                    </figure>
+                    <center><h2 className="link-title text-[20px]">Open your Minecraft, Navigate to "Play" ► "Servers"</h2></center>
+                    <div className="link-tags"></div>
+                    <figure className="image">
+                      <img src="/images/step-2-be.webp" alt="Step-2" />
+                    </figure>
+                    <center><h2 className="link-title text-[20px]">Click the "Add Server" button</h2></center>
+                    <div className="link-tags"></div>
+                    <figure className="image">
+                      <img src="/images/step-3-be.webp" alt="Step-3" />
+                    </figure>
+                    <center><h2 className="link-title text-[20px]">Enter the server identity:</h2></center>
+                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work</h2></center>
+                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Port: 19132</h2></center>
+                    <div className="link-tags"></div>
+                    <figure className="image">
+                      <img src="/images/step-4-be.webp" alt="Step-4" />
+                    </figure>
+                    <center><h2 className="link-title text-[20px]">Done and you're all set!</h2></center>
                     <div className="link-tags"></div>
                   </div>
                 </section>
