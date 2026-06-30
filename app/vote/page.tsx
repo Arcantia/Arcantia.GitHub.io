@@ -9,7 +9,7 @@ const VOTE_LINKS = [
   'https://minecraft-mp.com/server/358807/vote/?utm_source=arcantianet.work',  
   'https://minecraft.buzz/vote/21389/?utm_source=arcantianet.work',
   'https://minecraftservers.org/vote/688619/?utm_source=arcantianet.work',
-  'https://play-minecraft-servers.com/minecraft-servers/arcantia-network/?tab=vote&utm_source=arcantianet.work',
+  'https://minecraftpocket-servers.com/server/133631/vote/?utm_source=arcantianet.work',
 ];
 
 export default function VotePage() {
