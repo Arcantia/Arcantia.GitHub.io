@@ -84,8 +84,7 @@ export default function Home() {
                       <img src="/images/step-3-be.webp" alt="Step-3" />
                     </figure>
                     <center><h2 className="link-title text-[20px]">Enter the server identity:</h2></center>
-                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work</h2></center>
-                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Port: 19132</h2></center>
+                    <center><h2 className="link-title text-[20px]">Server Name: Arcantia Network<br />Server Address: play.arcantianet.work<br />Port: 19132</h2></center>
                     <div className="link-tags"></div>
                     <figure className="image">
                       <img src="/images/step-4-be.webp" alt="Step-4" />
